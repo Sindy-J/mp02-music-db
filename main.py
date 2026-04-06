@@ -192,7 +192,7 @@ def open_or_build_database():
     -------
     sqlite3.Connection  pointing to music.db
     """
-    def open_or_build_database():
+def open_or_build_database():
     if os.path.exists(DB_PATH):
         conn = sqlite3.connect(DB_PATH)
         conn.execute("PRAGMA foreign_keys = ON;")
